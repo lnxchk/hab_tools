@@ -12,12 +12,13 @@ Print out the package dependencies for all habitat packages currently loaded in 
 Search the dependencies of all habitat packages loaded in the supervisor for a specific package. 
 
 **Usage** 
+```
 Usage: hab_deps_search [options]
     -h, --host HOST                  Hostname or IP to test
     -d, --dep DEPENDENCY             Dependency to check for
         --help                       Displays help
 
-
+```
 `./hab_deps_search.rb core/zlib/1.2.8/20170513201911`
 
 *Requires* the **curb** ruby gem. 
