@@ -19,6 +19,11 @@ Usage: hab_deps_search [options]
         --help                       Displays help
 
 ```
-`./hab_deps_search.rb core/zlib/1.2.8/20170513201911`
+
+**Example**
+```
+$ ./hab_deps_search.rb -d core/zlib/1.2.8/20170513201911
+chef-demo/np-mongodb/3.2.9/20180517215632 matches
+```
 
 *Requires* the **curb** ruby gem. 
