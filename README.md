@@ -41,3 +41,23 @@ chef-demo/np-mongodb/3.2.9/20180517215632 matches
 ```
 
 *Requires* the **curb** ruby gem. 
+
+## partners.rb
+Find the supervisor's partner hosts
+
+**Usage**
+```
+./partners.rb
+```
+
+Optionally add an IP address to query a remote host
+
+
+**Example**
+```
+$ ./partners.rb 
+My partners are:
+172.31.47.61
+172.31.45.179
+172.31.37.155
+```
