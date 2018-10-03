@@ -61,3 +61,26 @@ My partners are:
 172.31.45.179
 172.31.37.155
 ```
+
+## hab_service_versions.rb
+
+Finds the running version of the service in the supervisor ring.
+
+Requires the service group to query.
+
+**Usage**
+```
+Usage: hab_service_versions [options]
+    -h, --host HOST                  Hostname or IP to test
+    -g, --group SERVICE_GROUP        Service group to check versions for
+        --help                       Displays help
+``` 
+
+**Example**
+```
+$ ./hab_service_versions.rb -h localhost -g container_sched_backend.default
+searching host localhost for dep container_sched_backend.default
+172.31.47.61 has version lnxchk/container_sched_backend/0.1.3/20181003183354
+172.31.37.155 has version lnxchk/container_sched_backend/0.1.3/20181003183354
+172.31.45.179 has version lnxchk/container_sched_backend/0.1.3/20181003183354
+```
