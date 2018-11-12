@@ -1,4 +1,4 @@
-#!/opt/chef/embedded/bin/ruby
+#!/usr/bin/env ruby
 
 # require things
 require 'json'
